@@ -21,6 +21,48 @@ body {
   justify-content: space-between;
 }
 
+.navbar a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background: #007bff;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  margin-bottom: 15px;
+}
+
+.hero p {
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn {
+  background: white;
+  color: #007bff;
+  padding: 10px 15px;
+  text-decoration: none;
+  margin: 5px;
+  display: inline-block;
+}
+
+.btn-outline {
+  border: 2px solid white;
+  color: white;
+  background: transparent;
+}
+
 
 /* Footer */
 footer {
