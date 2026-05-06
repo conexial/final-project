@@ -14,9 +14,7 @@ loginForm.addEventListener("submit", function(e) {
   const errorMessage =
   document.getElementById("errorMessage");
 
-  // DEFAULT USERS
-
-  // ADMIN
+  // ADMIN LOGIN
   if (
     email === "admin@gmail.com" &&
     password === "admin123"
@@ -25,22 +23,13 @@ loginForm.addEventListener("submit", function(e) {
     window.location.href = "admin.html";
   }
 
-  // PROVIDER
+  // USER LOGIN
   else if (
-    email === "provider@gmail.com" &&
-    password === "provider123"
+    email === "user@gmail.com" &&
+    password === "user123"
   ) {
 
-    window.location.href = "provider.html";
-  }
-
-  // CLIENT
-  else if (
-    email === "client@gmail.com" &&
-    password === "client123"
-  ) {
-
-    window.location.href = "client.html";
+    window.location.href = "dashboard.html";
   }
 
   else {
@@ -48,7 +37,6 @@ loginForm.addEventListener("submit", function(e) {
     errorMessage.textContent =
     "Invalid email or password";
 
-    errorMessage.style.color = "red";
   }
 
 });
