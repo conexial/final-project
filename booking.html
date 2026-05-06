@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0">
+
+  <title>Book Service</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+
+    <h2>CommunityHub</h2>
+
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="register.html">Register</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Book a Service</h1>
+    <p>Fill in your details to request a service.</p>
+  </section>
+
+  <!-- BOOKING FORM -->
+  <section class="register-section">
+
+    <form class="register-form">
+
+      <!-- CLIENT NAME -->
+      <div class="form-group">
+        <label>Full Name</label>
+
+        <input type="text"
+        placeholder="Enter your full name"
+        required>
+      </div>
+
+      <!-- PHONE -->
+      <div class="form-group">
+        <label>Phone Number</label>
+
+        <input type="tel"
+        placeholder="07XXXXXXXX"
+        required>
+      </div>
+
+      <!-- COUNTY -->
+      <div class="form-group">
+        <label>County</label>
+
+        <select required>
+          <option>Select County</option>
+          <option>Nairobi</option>
+          <option>Kiambu</option>
+          <option>Nakuru</option>
+        </select>
+      </div>
+
+      <!-- SUB COUNTY -->
+      <div class="form-group">
+        <label>Sub-County</label>
+
+        <input type="text"
+        placeholder="Enter sub-county"
+        required>
+      </div>
+
+      <!-- SERVICE -->
+      <div class="form-group">
+        <label>Service Needed</label>
+
+        <select required>
+          <option>Select Service</option>
+          <option>Plumbing</option>
+          <option>Electrical</option>
+          <option>Cleaning</option>
+          <option>Painting</option>
+        </select>
+      </div>
+
+      <!-- DATE -->
+      <div class="form-group">
+        <label>Preferred Date</label>
+
+        <input type="date" required>
+      </div>
+
+      <!-- MESSAGE -->
+      <div class="form-group">
+        <label>Description</label>
+
+        <textarea rows="5"
+        placeholder="Describe the problem or service needed"></textarea>
+      </div>
+
+      <!-- BUTTON -->
+      <button type="submit" class="btn">
+        Submit Booking
+      </button>
+
+    </form>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 Community Service Hub. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
