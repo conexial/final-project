@@ -82,8 +82,7 @@ if (providers.length === 0) {
       ${provider.subCounty}</p>
 
       <p>${provider.description}</p>
-
-    `;
+      `;
 
     providersList.appendChild(card);
 
