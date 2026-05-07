@@ -38,5 +38,36 @@ The system uses browser localStorage to save provider information dynamically wi
 - CSS
 - JavaScript
 - localStorage
-# Project Structure
+
+# Default Login Credentials
+
+## Admin Login
+Use the following default admin credentials to access the admin dashboard:
+Email: admin@gmail.com
+Password: admin123
+
+## Provider Login
+Service providers create their own accounts during registration using:
+- Email
+- Password
+Their login details are saved using browser localStorage.
+
+# Admin Functions
+
+The admin dashboard allows the administrator to:
+
+- View registered providers
+- Edit provider details
+- Delete providers
+- Reset provider passwords
+- Monitor registered services
+
+# Authentication System
+The project includes a simple authentication system built using JavaScript and localStorage.
+
+Features include:
+- User registration
+- Login validation
+- Password storage
+- Session-based access simulation
 

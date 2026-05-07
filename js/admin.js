@@ -36,12 +36,11 @@ function displayProviders() {
             View
           </button>
 
-          <button id="edit-btn"
-        onclick="editProvider(${index})">
-             Edit
-           </button
+          <button class="btn" onclick="editProvider(${index})">
+            Edit
+          </button>
 
-          <button id="delete-btn" onclick="deleteProvider(${index})">
+          <button class="delete-btn" onclick="deleteProvider(${index})">
             Delete
           </button>
 

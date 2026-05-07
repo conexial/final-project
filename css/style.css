@@ -43,32 +43,6 @@ body {
   color: #007bff;
   text-decoration: none;
 }
-.admin-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 15px;
-  flex-wrap: wrap;
-}
-
-.admin-buttons .btn {
-  min-width: 90px;
-  text-align: center;
-}
-
-#edit-btn {
-  background: green;
-  color: rgb(54, 180, 71);
-  margin-top: 10px;
-}
-
-#delete-btn {
-  background: red;
-  color: white;
-  margin-top: 10px;
-  padding: 0% 10px;
-}
-
 /* HERO */
 .hero {
   text-align: center;
@@ -122,7 +96,7 @@ body {
 }
 
 .category-card {
-  width: 280px;
+  width: 300px;
   padding: 18px;
   border-radius: 10px;
   background: #6899c9;
@@ -303,11 +277,6 @@ body {
 
 /* DASHBOARD PAGE */
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
-}
 
 /* HEADER */
 
@@ -395,6 +364,36 @@ body {
 
 .btn:hover {
   background: #0056b3;
+}
+
+/* Admin buttons only */
+.admin-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.admin-buttons .btn {
+  width: auto;
+  min-width: 80px;
+  padding: 8px 12px;
+}
+
+.edit-btn {
+  background: green;
+  color: white;
+}
+
+.delete-btn {
+  background: red;
+  color: white;
+}
+
+.reset-btn {
+  background: orange;
+  color: white;
 }
 
 /* FOOTER */
