@@ -82,6 +82,7 @@ if (providers.length === 0) {
       ${provider.subCounty}</p>
 
       <p>${provider.description}</p>
+      <a href="booking.html" class="btn">Book Now</a>
       `;
 
     providersList.appendChild(card);
