@@ -44,6 +44,14 @@ body {
   text-decoration: none;
 }
 
+.admin-buttons {
+  margin-top: 10px;
+}
+
+.delete-btn {
+  background: red;
+  margin-left: 5px;
+}
 /* HERO */
 .hero {
   text-align: center;
