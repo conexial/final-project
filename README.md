@@ -71,3 +71,11 @@ Features include:
 - Password storage
 - Session-based access simulation
 
+# Known Bugs
+
+- Data is stored using browser localStorage and may be lost if browser data is cleared.
+- The system does not use a real database.
+- Authentication is for educational/demo purposes only.
+- Multiple users on different devices cannot share the same data.
+- Profile image upload is stored locally in the browser.
+- No real backend security or encryption is implemented.
