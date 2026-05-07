@@ -97,3 +97,18 @@ countySelect.addEventListener("change", function() {
         });
     }
 });
+
+function viewProvider(index) {
+
+  const provider = providers[index];
+
+  alert(
+    "Name: " + provider.name + "\n" +
+    "Service: " + provider.service + "\n" +
+    "Phone: " + provider.phone + "\n" +
+    "County: " + provider.county + "\n" +
+    "Sub County: " + provider.subCounty + "\n" +
+    "Description: " + provider.description
+  );
+
+}
