@@ -45,3 +45,48 @@ function filterServices() {
     }
   });
 }
+
+const providersList =
+document.getElementById("providersList");
+
+const providers =
+JSON.parse(localStorage.getItem("providers")) || [];
+
+if (providers.length === 0) {
+
+  providersList.innerHTML =
+    "<p>No providers registered yet.</p>";
+
+} else {
+
+  providers.forEach(function(provider) {
+
+    const card =
+    document.createElement("div");
+
+    card.classList.add("category-card");
+
+    card.innerHTML = `
+
+      <img src="${provider.image}" width="100">
+
+      <h3>${provider.service}</h3>
+
+      <p><strong>Name:</strong>
+      ${provider.name}</p>
+
+      <p><strong>County:</strong>
+      ${provider.county}</p>
+
+      <p><strong>Sub County:</strong>
+      ${provider.subCounty}</p>
+
+      <p>${provider.description}</p>
+
+    `;
+
+    providersList.appendChild(card);
+
+  });
+
+}
