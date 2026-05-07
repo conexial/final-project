@@ -43,36 +43,32 @@ body {
   color: #007bff;
   text-decoration: none;
 }
-/* Admin Buttons */
 .admin-buttons {
-  margin-top: 10px;
   display: flex;
+  justify-content: center;
   gap: 10px;
+  margin-top: 15px;
+  flex-wrap: wrap;
 }
 
-/* Delete Button */
-.delete-btn {
-  background: red;
-  color: white;
-}
-
-/* Provider Image */
-.category-card img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-/* Admin Cards */
-.category-card {
-  background: white;
-  padding: 15px;
-  margin: 10px;
-  border: 1px solid #ddd;
+.admin-buttons .btn {
+  min-width: 90px;
   text-align: center;
 }
+
+#edit-btn {
+  background: green;
+  color: rgb(54, 180, 71);
+  margin-top: 10px;
+}
+
+#delete-btn {
+  background: red;
+  color: white;
+  margin-top: 10px;
+  padding: 0% 10px;
+}
+
 /* HERO */
 .hero {
   text-align: center;

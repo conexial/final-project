@@ -36,15 +36,18 @@ function displayProviders() {
             View
           </button>
 
-          <button class="btn delete-btn" onclick="deleteProvider(${index})">
+          <button id="edit-btn"
+        onclick="editProvider(${index})">
+             Edit
+           </button
+
+          <button id="delete-btn" onclick="deleteProvider(${index})">
             Delete
           </button>
-        </div>
+
         <button class="btn"
-           onclick="resetPassword(${index})">
-
-            Reset Password
-
+      onclick="resetPassword(${index})">
+              Reset Password
              </button>
       `;
 
@@ -74,6 +77,38 @@ function viewProvider(index) {
     "Sub County: " + provider.subCounty + "\n" +
     "Description: " + provider.description
   );
+}
+
+function editProvider(index) {
+
+  let provider = providers[index];
+
+  let newName =
+  prompt("Edit Name", provider.name);
+
+  let newPhone =
+  prompt("Edit Phone", provider.phone);
+
+  let newService =
+  prompt("Edit Service", provider.service);
+
+  if (newName && newPhone && newService) {
+
+    provider.name = newName;
+    provider.phone = newPhone;
+    provider.service = newService;
+
+    localStorage.setItem(
+      "providers",
+      JSON.stringify(providers)
+    );
+
+    displayProviders();
+
+    alert("Provider updated successfully!");
+
+  }
+
 }
 
 function resetPassword(index) {
