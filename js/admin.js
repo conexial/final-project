@@ -40,12 +40,23 @@ function displayProviders() {
         <p><strong>Sub County:</strong>
         ${provider.subCounty}</p>
 
-        <button class="btn"
-        onclick="deleteProvider(${index})">
+        <div class="admin-buttons">
 
-        Delete
+  <button class="btn"
+  onclick="viewProvider(${index})">
 
-        </button>
+  View
+
+  </button>
+
+  <button class="btn delete-btn"
+  onclick="deleteProvider(${index})">
+
+  Delete
+
+  </button>
+
+</div>
 
       `;
 
