@@ -1,45 +1,77 @@
+<!-- dashboard.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <section class="dashboard-section">
-  <h1>Welcome to Your Dashboard</h1>
 
-  <div class="dashboard-cards">
+  <!-- HEADER -->
+  <header class="header">
+    <h2>User Dashboard</h2>
+    <nav class="navbar">
+      <a href="services.html">Services</a>
+      <a href="register.html">Become Provider</a>
+      <a href="login.html">Logout</a>
+    </nav>
+  </header>
 
-    <div class="dashboard-card">
-      <h2>Book a Service</h2>
-      <p>Find and book service providers in your area.</p>
-      <a href="services.html" class="btn">Find Services</a>
+  <!-- DASHBOARD -->
+  <section class="dashboard-section">
+    <h1>Welcome User</h1>
+    <p>
+      Access services and manage your activities.
+    </p>
+    <div class="dashboard-cards">
+
+      <!-- BOOK SERVICE -->
+      <div class="dashboard-card">
+        <h2>Book Service</h2>
+        <p>
+          Find and book trusted service providers.
+        </p>
+        <a href="services.html" class="btn">
+          Find Services
+        </a>
+      </div>
+      <!-- BECOME PROVIDER -->
+      <div class="dashboard-card">
+        <h2>Become Provider</h2>
+        <p>
+          Register your skill and offer services.
+        </p>
+        <a href="register.html" class="btn">
+          Register Service
+        </a>
+      </div>
+      <!-- PROFILE -->
+      <div class="dashboard-card">
+        <h2>Manage Profile</h2>
+        <p>
+          Update your account information.
+        </p>
+        <a href="#" class="btn">
+          Edit Profile
+        </a>
+      </div>
+
+      <!-- BOOKINGS -->
+      <div class="dashboard-card">
+        <h2>My Bookings</h2>
+        <p>
+          View services you have booked.
+        </p>
+        <a href="#" class="btn">
+          View Bookings
+        </a>
+      </div>
     </div>
+  </section>
 
-    <div class="dashboard-card">
-      <h2>Offer a Service</h2>
-      <p>Register your skill and receive service requests.</p>
-      <a href="register.html" class="btn">Register Service</a>
-    </div>
-
-    <div class="dashboard-card">
-      <h2>My Bookings</h2>
-      <p>View services you have requested.</p>
-      <a href="bookings.html" class="btn">View Bookings</a>
-    </div>
-
-    <div class="dashboard-card">
-      <h2>Service Requests</h2>
-      <p>View requests from clients who booked you.</p>
-      <a href="requests.html" class="btn">View Requests</a>
-    </div>
-  </div>
-</section>
-
-<footer>
-    <p>&copy; 2024 Community Service Hub. All rights reserved.</p>
-</footer>
 </body>
 </html>
