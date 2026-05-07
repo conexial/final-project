@@ -43,14 +43,35 @@ body {
   color: #007bff;
   text-decoration: none;
 }
-
+/* Admin Buttons */
 .admin-buttons {
   margin-top: 10px;
+  display: flex;
+  gap: 10px;
 }
 
+/* Delete Button */
 .delete-btn {
   background: red;
-  margin-left: 5px;
+  color: white;
+}
+
+/* Provider Image */
+.category-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Admin Cards */
+.category-card {
+  background: white;
+  padding: 15px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
 }
 /* HERO */
 .hero {
