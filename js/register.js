@@ -53,3 +53,42 @@ profilePhoto.addEventListener("change", function() {
   }
 
 });
+
+const registerForm =
+document.getElementById("registerForm");
+
+registerForm.addEventListener("submit", function(e) {
+
+  e.preventDefault();
+
+  const provider = {
+    name: document.getElementById("fullName").value,
+
+    phone: document.getElementById("phone").value,
+
+    email: document.getElementById("email").value,
+
+    service: document.getElementById("service").value,
+
+    county: document.getElementById("county").value,
+
+    subCounty: document.getElementById("subCounty").value,
+
+    description: document.getElementById("description").value,
+
+    image: previewImage.src
+  };
+
+  let providers =
+    JSON.parse(localStorage.getItem("providers")) || [];
+
+  providers.push(provider);
+
+  localStorage.setItem(
+    "providers",
+    JSON.stringify(providers)
+  );
+
+  alert("Registration Successful!");
+
+});
