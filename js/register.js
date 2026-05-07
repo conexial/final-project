@@ -90,5 +90,7 @@ registerForm.addEventListener("submit", function(e) {
   );
 
   alert("Registration Successful!");
+  
+  window.location.href = "services.html";
 
 });
