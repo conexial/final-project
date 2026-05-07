@@ -40,6 +40,12 @@ function displayProviders() {
             Delete
           </button>
         </div>
+        <button class="btn"
+           onclick="resetPassword(${index})">
+
+            Reset Password
+
+             </button>
       `;
 
       adminProviders.appendChild(card);
@@ -62,8 +68,31 @@ function viewProvider(index) {
     "Name: " + provider.name + "\n" +
     "Service: " + provider.service + "\n" +
     "Phone: " + provider.phone + "\n" +
+    "Email: " + provider.email + "\n" +
+    "Password: " + provider.password + "\n" +
     "County: " + provider.county + "\n" +
     "Sub County: " + provider.subCounty + "\n" +
     "Description: " + provider.description
   );
+}
+
+function resetPassword(index) {
+
+  const newPassword =
+  prompt("Enter new password");
+
+  if (newPassword) {
+
+    providers[index].password =
+    newPassword;
+
+    localStorage.setItem(
+      "providers",
+      JSON.stringify(providers)
+    );
+
+    alert("Password reset successful!");
+
+  }
+
 }

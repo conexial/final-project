@@ -68,6 +68,8 @@ registerForm.addEventListener("submit", function(e) {
 
     email: document.getElementById("email").value,
 
+    password:document.getElementById("password").value,
+
     service: document.getElementById("service").value,
 
     county: document.getElementById("county").value,
@@ -90,7 +92,7 @@ registerForm.addEventListener("submit", function(e) {
   );
 
   alert("Registration Successful!");
-  
+
   window.location.href = "services.html";
 
 });
